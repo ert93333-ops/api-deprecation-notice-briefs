@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>API Deprecation Notice Briefs | API deprecation notice template</title>
+    <meta
+      name="description"
+      content="Paste public-safe API change, endpoint, version, SDK, migration, timeline, customer impact, docs, support, and owner notes to create a clearer API deprecation notice brief."
+    >
+    <link rel="canonical" href="https://ert93333-ops.github.io/api-deprecation-notice-briefs/">
+    <meta property="og:title" content="API Deprecation Notice Briefs">
+    <meta property="og:description" content="Turn vague API deprecation notes into a customer-ready notice before integrations break.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ert93333-ops.github.io/api-deprecation-notice-briefs/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-product="API Deprecation Notice Briefs">
+    <a class="skip-link" href="#workflow">Skip to API deprecation QA</a>
+    <header class="site-header" data-header>
+      <div class="shell nav">
+        <a class="brand" href="index.html" aria-label="API Deprecation Notice Briefs home">
+          <span class="brand-mark">API</span>
+          <span>API Deprecation Notice Briefs</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#workflow">Workflow</a>
+          <a href="#pricing">Pricing</a>
+          <a href="api-deprecation-notice-template.html">Template</a>
+          <a href="#waitlist">Early access</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="shell hero-grid">
+          <div class="hero-copy reveal">
+            <h1 id="hero-title">Turn vague API deprecation notes into a customer-ready notice before integrations break.</h1>
+            <p class="hero-subtitle">
+              Paste public-safe API change, endpoint, version, SDK, migration, timeline, customer impact, docs, support, and owner notes to flag missing dates, unclear breaking-change scope, vague "soon" language, absent migration steps, and unresolved owner handoff.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#workflow" data-track-cta="hero_audit">Audit sample API deprecation notes</a>
+              <a class="button secondary" href="#waitlist" data-track-cta="hero_waitlist">Request early access</a>
+            </div>
+          </div>
+          <div class="hero-panel reveal" aria-label="Example brief preview">
+            <div class="mini-window">
+              <div class="mini-window-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="mini-window-body">
+                <p class="mini-label">Notice risk</p>
+                <h2>Vague deadline</h2>
+                <p>The note says v1 is deprecated soon, but misses the exact endpoint, effective date, migration path, SDK impact, support link, and launch owner.</p>
+                <ul class="check-list">
+                  <li>effective date missing</li>
+                  <li>endpoint scope unclear</li>
+                  <li>migration path absent</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section band" id="workflow" aria-labelledby="workflow-title">
+        <div class="shell workflow-layout">
+          <div class="section-copy reveal">
+            <h2 id="workflow-title">Paste API change notes. Get a customer notice and internal launch handoff.</h2>
+            <p>
+              The analyzer stays in your browser. It does not connect to GitHub, repositories, OpenAPI specs, API gateways, docs CMS, CRMs, help desks, email, or billing, and it does not send notices or store customer data remotely.
+            </p>
+            <ol class="step-list">
+              <li>Paste public-safe API deprecation or changelog notes.</li>
+              <li>Add endpoint, version, SDK, date, migration, docs, support, impact, and owner notes.</li>
+              <li>Generate API deprecation notice brief.</li>
+              <li>Copy the customer notice and internal launch handoff.</li>
+            </ol>
+          </div>
+
+          <form class="qa-form reveal" id="qa-form">
+            <div class="form-header">
+              <h3>API deprecation notice auditor</h3>
+              <button class="button ghost small" type="button" id="load-sample">Load sample API deprecation notes</button>
+            </div>
+
+            <label for="change-notes">API change or changelog notes</label>
+            <textarea id="change-notes" name="change-notes" spellcheck="false" placeholder="Paste public-safe API deprecation notes, release note drafts, changelog snippets, or customer notice draft."></textarea>
+
+            <label for="scope-notes">Endpoint, field, version, or SDK scope notes</label>
+            <textarea id="scope-notes" name="scope-notes" class="short-textarea" placeholder="Record affected endpoint, field, webhook, version, SDK, library, client, or feature scope."></textarea>
+
+            <div class="two-column">
+              <div>
+                <label for="deadline-notes">Effective date and migration window</label>
+                <textarea id="deadline-notes" name="deadline-notes" class="short-textarea" placeholder="Record exact deadline, sunset date, migration window, timezone, or support-end date."></textarea>
+              </div>
+              <div>
+                <label for="breaking-notes">Breaking-change clarity</label>
+                <textarea id="breaking-notes" name="breaking-notes" class="short-textarea" placeholder="State whether this is breaking, non-breaking, backwards compatible, beta-only, or version-specific."></textarea>
+              </div>
+            </div>
+
+            <div class="two-column">
+              <div>
+                <label for="migration-notes">Migration steps</label>
+                <textarea id="migration-notes" name="migration-notes" class="short-textarea" placeholder="Record replacement endpoint, code change, docs URL, SDK version, test step, or migration sequence."></textarea>
+              </div>
+              <div>
+                <label for="impact-notes">Customer impact notes</label>
+                <textarea id="impact-notes" name="impact-notes" class="short-textarea" placeholder="Record affected customer segment, plan, integration type, app workflow, or expected failure mode."></textarea>
+              </div>
+            </div>
+
+            <div class="two-column">
+              <div>
+                <label for="docs-notes">Docs and support path notes</label>
+                <textarea id="docs-notes" name="docs-notes" class="short-textarea" placeholder="Record docs link, migration guide, support channel, help center page, forum thread, or devrel owner path."></textarea>
+              </div>
+              <div>
+                <label for="owner-notes">Owner and internal follow-up decision</label>
+                <textarea id="owner-notes" name="owner-notes" class="short-textarea" placeholder="Record product owner, devrel owner, docs owner, send/hold decision, review date, or escalation owner."></textarea>
+              </div>
+            </div>
+
+            <div class="two-column">
+              <div>
+                <label for="api-surface-type">API surface type</label>
+                <select id="api-surface-type" name="api-surface-type">
+                  <option>REST endpoint deprecation</option>
+                  <option>GraphQL field deprecation</option>
+                  <option>Webhook payload change</option>
+                  <option>SDK or client library migration</option>
+                  <option>Authentication or token change</option>
+                  <option>Beta API sunset</option>
+                </select>
+              </div>
+              <div>
+                <label for="cadence-notes">Notice cadence notes</label>
+                <textarea id="cadence-notes" name="cadence-notes" class="short-textarea" placeholder="Record announcement cadence, reminder plan, docs update timing, or final cutoff notice."></textarea>
+              </div>
+            </div>
+
+            <p class="form-error" id="workflow-error" role="alert"></p>
+            <button class="button primary full" type="submit" data-track-cta="workflow_generate">
+              Generate API deprecation notice brief
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="output-title">
+        <div class="shell output-layout">
+          <article class="output-panel reveal" id="output-panel">
+            <div class="output-heading">
+              <div>
+                <p class="mini-label">QA output</p>
+                <h2 id="output-title">No brief generated yet</h2>
+              </div>
+              <span class="status-pill" id="status-pill">Waiting</span>
+            </div>
+            <div id="brief-output" class="brief-output">
+              <p>Load the sample or paste your own public-safe API deprecation notes to generate the brief.</p>
+            </div>
+            <div class="output-actions">
+              <button class="button secondary" type="button" id="copy-brief" disabled>Copy brief</button>
+              <span id="copy-status" class="copy-status" aria-live="polite"></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section band" id="pricing" aria-labelledby="pricing-title">
+        <div class="shell">
+          <div class="section-copy narrow reveal">
+            <h2 id="pricing-title">Reserve early access before payments are connected.</h2>
+            <p>Stripe is not connected for this experiment. The CTA captures purchase intent and prepares a public-safe demo request.</p>
+          </div>
+          <div class="pricing-grid">
+            <article class="price-card reveal">
+              <h3>Solo API/product lead</h3>
+              <p class="price">$19<span>/month</span></p>
+              <p>For one API PM, devrel lead, founder, or technical writer who needs clearer deprecation notices.</p>
+              <button class="button primary plan-button" type="button" data-plan="Solo API/product lead">Request Solo access</button>
+            </article>
+            <article class="price-card featured reveal">
+              <h3>Platform team/company</h3>
+              <p class="price">$79<span>/month</span></p>
+              <p>For platform, devrel, docs, and product teams publishing frequent API changes and migrations.</p>
+              <button class="button primary plan-button" type="button" data-plan="Platform team/company">Request Team access</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="waitlist" aria-labelledby="waitlist-title">
+        <div class="shell waitlist-layout">
+          <div class="section-copy reveal">
+            <h2 id="waitlist-title">Request the first usable build.</h2>
+            <p>This form stores locally and prepares a public-safe GitHub issue handoff. Do not paste API keys, tokens, private customer data, incident details, contracts, billing data, or security-sensitive information.</p>
+          </div>
+          <form class="waitlist-form reveal" id="waitlist-form">
+            <label>
+              Work email
+              <input id="email" name="email" type="email" required value="api-deprecation-smoke@example.invalid">
+            </label>
+            <label>
+              Role
+              <select id="role" name="role">
+                <option>API product manager</option>
+                <option>developer relations lead</option>
+                <option>platform engineering lead</option>
+                <option>B2B SaaS founder</option>
+                <option>technical writer</option>
+              </select>
+            </label>
+            <label>
+              API surface type
+              <select id="site-type-intent" name="site-type-intent">
+                <option>REST endpoint deprecation</option>
+                <option>GraphQL field deprecation</option>
+                <option>Webhook payload change</option>
+                <option>SDK or client library migration</option>
+                <option>Authentication or token change</option>
+                <option>Beta API sunset</option>
+              </select>
+            </label>
+            <label>
+              Deprecation cadence
+              <select id="deprecation-cadence" name="deprecation-cadence">
+                <option>Monthly API changelog</option>
+                <option>Quarterly migration window</option>
+                <option>Major version sunset</option>
+                <option>Ad hoc customer notices</option>
+              </select>
+            </label>
+            <label>
+              Plan interest
+              <select id="plan" name="plan">
+                <option>Solo API/product lead</option>
+                <option>Platform team/company</option>
+              </select>
+            </label>
+            <label>
+              Willingness to pay
+              <select id="budget" name="budget">
+                <option>$19/month if it prevents vague API notices</option>
+                <option>$79/month for platform team migration handoffs</option>
+                <option>Need a pilot first</option>
+              </select>
+            </label>
+            <label>
+              Current API deprecation process
+              <textarea id="pain" name="pain" class="short-textarea">I need repeatable checks for API deprecation notices, effective dates, endpoint scope, migration steps, docs links, support path, customer impact, owner handoff, and vague language before changelog publication.</textarea>
+            </label>
+            <label class="checkbox-row">
+              <input id="purchase-intent" name="purchase-intent" type="checkbox" checked>
+              <span>This is a real purchase-intent or pilot request if it helps publish clearer API deprecation notices.</span>
+            </label>
+            <div class="form-actions">
+              <button class="button primary" type="submit" data-track-cta="waitlist_submit">Request early access</button>
+              <a class="button secondary" href="#workflow" data-track-cta="waitlist_demo">Try the auditor</a>
+            </div>
+            <p class="form-success" id="waitlist-status" role="status" aria-live="polite"></p>
+          </form>
+          <div class="handoff-panel reveal" id="handoff-panel" hidden>
+            <h3>Public-safe handoff</h3>
+            <p>Use this link only if you are comfortable opening a public GitHub issue. Email is omitted from the issue body.</p>
+            <div class="handoff-actions">
+              <a class="button primary" id="remote-intent-link" href="#" target="_blank" rel="noreferrer">Open GitHub demo request</a>
+              <button class="button secondary" type="button" id="copy-request">Copy request details</button>
+            </div>
+            <p class="copy-status" id="handoff-status" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section band" aria-labelledby="resource-title">
+        <div class="shell resource-layout">
+          <div class="section-copy reveal">
+            <h2 id="resource-title">API deprecation notice template</h2>
+            <p>Use the SEO asset when endpoint sunsets, version migrations, SDK changes, webhook payload changes, or breaking API changes need a safer customer handoff.</p>
+          </div>
+          <a class="resource-link reveal" href="api-deprecation-notice-template.html" data-track-cta="seo_guide">
+            Open the template
+          </a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="constraints-title">
+        <div class="shell content-layout">
+          <article class="content-card reveal">
+            <h2 id="constraints-title">API communication constraints are explicit.</h2>
+            <p>
+              This MVP creates API/product communication QA from pasted public-safe samples. It does not connect to repositories, parse OpenAPI specs, validate runtime APIs, send customer notices, interpret contracts, advise on compliance, replace company policy, or store customer data remotely.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <span>API Deprecation Notice Briefs</span>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
