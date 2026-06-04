@@ -26,7 +26,7 @@ Payments are not connected. The MVP uses early-access, demo-request, and purchas
 
 - Landing page: https://ert93333-ops.github.io/api-deprecation-notice-briefs/
 - Template: https://ert93333-ops.github.io/api-deprecation-notice-briefs/api-deprecation-notice-template.html
-- GitHub Gist checklist: pending marketing
+- GitHub Gist checklist: https://gist.github.com/ert93333-ops/0e956e2960fe00fa6881c3c2d87993de
 
 ## Marketing Test Links
 
